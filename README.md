@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# iTunes Search App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objectives
 
-## Available Scripts
+The objective of the current project is to search a name of an artist, by example "Jack+Johnson", and given that string show all the albums that were released by that artist.
 
-In the project directory, you can run:
+## Installation
 
-### `npm start`
+This project was developed using React and the iTunes Search API.
+To use React, first we will have to download a Local Development Environment , it is recommended to use Visual Studio Code and download the latest version.(For macOS: vscode-darwin-universal.zip)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Later we will download Node.js version 18.13.0 LTS from their website https://nodejs.org/en/. Once we have downloaded it, we will type the following command on our Terminal " node -v " so we can be sure that Node.js was downloaded successfully.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Now we will have to create our React project using the following command on a file which we had created earlier " npx create-react-app my-app ", where my-app will be the name of our project.
 
-### `npm test`
+Once it creates our React project we will have to download the styling solution which is Styled-Components typing the following command line: " npm install styled-components "
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Run
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Having installed all the tools needed, to run the project we will type the following command line on our Terminal: " npm start ", and will be able to search all of the artist we like and see the price, name of that artist and the name of the albums released by a given artist.
