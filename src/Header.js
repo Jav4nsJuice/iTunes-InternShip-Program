@@ -61,9 +61,12 @@ class Header extends React.Component {
     handleSearchTextChange = event =>
      this.setState({ searchText: event.target.value });
 
+     handleSearchMediaChange = event =>
+     this.setState({ searchMedia: event.target.value });
+
     render() {
-        // const { mediaTypes, startSearch } = this.props;
-        const { searchText } = this.state;
+        const { startSearch } = this.props;
+        const { searchText, searchMedia } = this.state;
         return (
             <Content>
                 <Title>iTunes Search API</Title>
@@ -74,7 +77,7 @@ class Header extends React.Component {
                         placeholder="Search..."
                         onChange={this.handleSearchTextChange}
                     />
-                    <Button >
+                    <Button onClick={() => startSearch(searchText, searchMedia)}>
                         <i className="material-icons">search</i>
                     </Button>
                 </ItunesForm>

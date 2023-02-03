@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
-// import ItemsList from './ItemsList';
-// import { itunesApiRequest, mediaTypes } from './utils';
+import ItemsList from './ItemsList';
+import { iTunesApiRequest } from './utils';
 import styled, { createGlobalStyle } from 'styled-components';
 import Palette from './palette';
 
@@ -21,26 +21,25 @@ const Content = styled.div`
 `;
 
 class App extends React.Component {
-    // constructor(props) {
-        // super(props);
-        // this.state = { searchResults: [] };
-        // this.updateSearch = this.updateSearch.bind(this);
-    // }
+    constructor(props) {
+        super(props);
+        this.state = { searchResults: [] };
+        this.updateSearch = this.updateSearch.bind(this);
+    }
 
-    // async updateSearch(text, media) {
-    //  const response = await itunesApiRequest(text, 'music', 'album');
-    //  this.setState({ searchResults: response.results });
-    // }
+    async updateSearch(text) {
+     const response = await iTunesApiRequest(text, 'music', 'album');
+     this.setState({ searchResults: response.results });
+    }
 
     render() {
-        // const { searchResults } = this.state;
+        const { searchResults } = this.state;
         return (
             <>
                 <GlobalStyle />
                 <Content>
-                    {/* <Header mediaTypes={mediaTypes} startSearch={this.updateSearch} /> */}
-                    <Header />
-                    {/* <ItemsList items={searchResults} /> */}
+                    <Header startSearch={this.updateSearch} />
+                    <ItemsList items={searchResults} />
                 </Content>
             </>
         );
