@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 export const SearchInput = (props) => {
     const handleSearchTextChange = (event) => {
-        props.handleSearchTextChange(event); // Pasar el evento al padre
+        props.handleSearchTextChange(event);
     };
   
     return (
@@ -16,4 +16,4 @@ export const SearchInput = (props) => {
             />
         </div>
     );
-  };
+};

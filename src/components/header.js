@@ -20,7 +20,7 @@ class Header extends Component {
 
   startSearch = () => {
     const searchText = this.state.searchText;
-    this.props.startSearch(searchText); // Pasar el texto de búsqueda al componente padre
+    this.props.startSearch(searchText); 
   };
 
   render() {

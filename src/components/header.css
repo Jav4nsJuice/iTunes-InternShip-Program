@@ -17,7 +17,7 @@
 .form {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align form to the end */
+  justify-content: flex-end;
   width: 480px;
 }
 
@@ -38,17 +38,16 @@
   margin-left: 12px;
 }
 
-/* Add a media query for smaller screen sizes */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* Stack items vertically on smaller screens */
+    flex-direction: column;
   }
 
   .title-container,
   .logo,
   .form {
-    max-width: 100%; /* Full width on smaller screens */
-    margin: 10px auto; /* Add margin for spacing */
+    max-width: 100%;
+    margin: 10px auto; 
     text-align: center;
   }
 }

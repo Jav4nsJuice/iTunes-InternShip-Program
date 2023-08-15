@@ -4,7 +4,7 @@
     gap: 20px;
     justify-items: center;
     padding: 20px;
-    background-color: white; /* Light gray background */
+    background-color: white;
   }
   
   .item {
@@ -13,19 +13,19 @@
     align-items: center;
     width: 200px;
     height: 300px;
-    border: 1px solid #d1d1d6; /* Light gray border */
+    border: 1px solid #d1d1d6;
     padding: 20px;
     text-align: center;
     background-color: white;
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     cursor: pointer;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .artwork img {
@@ -46,7 +46,7 @@
   }
   
   .collectionPrice {
-    color: #007AFF; /* Apple's blue color */
+    color: #007AFF;
     font-size: 18px;
     margin-top: 5px;
   }
