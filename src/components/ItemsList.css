@@ -1,0 +1,52 @@
+.ItemsList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #d1d1d6;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .artwork img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .collectionName {
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .artistName {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .collectionPrice {
+    color: #007AFF;
+    font-size: 18px;
+    margin-top: 5px;
+  }
